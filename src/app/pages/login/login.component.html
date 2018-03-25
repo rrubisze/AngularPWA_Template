@@ -1,0 +1,28 @@
+<div style="text-align:center;  position: relative;
+margin-top: 20%;">
+  <mat-card style="margin-left:5%; margin-right:5%">
+    <mat-card-title>
+      Login
+    </mat-card-title>
+    <mat-card-content>
+        <form>
+          <div>
+            <mat-form-field>
+              <input matInput [(ngModel)]="username" placeholder="Username" value="" name="UserName">
+            </mat-form-field>
+          </div>
+            <mat-form-field>
+                <input matInput 
+                       [(ngModel)]="password" 
+                       name="Password"
+                       placeholder="Password" 
+                       value="" 
+                       type="password">
+            </mat-form-field>
+            <div>
+            <button mat-raised-button (click)="login()" color="primary">Login</button>
+          </div>
+          </form>
+    </mat-card-content>
+  </mat-card>
+</div>
